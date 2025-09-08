@@ -103,11 +103,12 @@ const question5 = (myString) => {
   let myValue = "";
   /////////// create your loop below this line ///////////
   for (let i = myString.length - 1; i >= 0; i--) {
-    const char = myString.charAt(i).toLowerCase().trim();
+    const char = myString.charAt(i);
     if (char !== " ") {
       myValue += char;
     }
   }
+  myValue = myValue.toLowerCase();
   /////////// create your loop above this line ///////////
   return myValue;
 };
